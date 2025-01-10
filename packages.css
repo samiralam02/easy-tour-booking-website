@@ -1,0 +1,239 @@
+/* Packages Page */
+
+/* General Styles */
+body {
+    font-family: 'El Messiri', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.packages {
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.tour-card {
+    display: flex;
+    border: 1px solid #ddd;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tour-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.image-section {
+    position: relative;
+    width: 300px;
+}
+
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.image-section:hover img {
+    transform: scale(1.1);
+}
+
+.details-section {
+    padding: 20px;
+    flex-grow: 1;
+    border-right: 1px solid #ddd;
+    transition: background 0.3s ease;
+}
+
+.details-section:hover {
+    background: #f9f9f9;
+}
+
+.details-section h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.details-section .duration, .details-section .package-include {
+    margin: 10px 0;
+    font-size: 17px;
+    color: #666;
+    display: flex;
+    align-items: center;
+}
+
+.details-section .duration i, .details-section .package-include i {
+    margin-right: 5px;
+    color: #007bff;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.option-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    color: #666;
+    transition: color 0.3s ease;
+}
+
+.icon-btnn{
+    background: none;
+    border: none;
+}
+
+.icon img {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease;
+}
+
+.icon:hover img {
+    transform: scale(1.2);
+}
+
+.icon:hover {
+    color: #007bff;
+}
+
+.price-section {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.winter-deals-ribbon {
+    background-color: #ff6f61;
+    width: 77%;
+    color: white;
+    padding: 6px 20px;
+    font-size: 17px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        top: -50px;
+        opacity: 0;
+    }
+    to {
+        top: 10px;
+        opacity: 1;
+    }
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 40px 0 0 0;
+}
+
+.call-button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: #007bff;
+    color: #fff;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.call-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.dropdown-section {
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s ease;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.dropdown-section:hover {
+    background-color: #ffffff;
+}
+
+.dropdown-section.active .dropdown-content {
+    display: block;
+    max-height: 1000px;
+    transition: max-height 0.3s ease;
+}
+
+.dropdown-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .dropdown-content {
+    display: none;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+  }
+
+  .day-label {
+    color: #007BFF; /* Change this color to whatever you prefer */
+    font-size: 1.2em; /* Adjust the font size as needed */
+}
+.dropdown-content p {
+    margin: 0.5em 0;
+}
+
+.btnn{
+    background-color: #ff6f61;
+    color: white;
+    padding: 6px 20px;
+    font-size: 17px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    animation: slideIn 0.5s ease-in-out;
+}
+
+.btnn i{
+    margin-right: 8px;
+}
